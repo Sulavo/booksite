@@ -1,0 +1,107 @@
+/* Toast */
+.status-toast {
+  margin: 20px auto;
+  width: fit-content;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 12px 20px;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: #333;
+  font-weight: bold;
+  animation: fadeOut 3s forwards 1s;
+  text-align: center;
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}
+
+/* Centered table container */
+.table-wrapper {
+  max-width: 900px;
+  margin: 80px auto 40px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+/* Table layout */
+.table-wrapper table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+/* Table head */
+.table-wrapper th {
+  background-color: #444;
+  color: white;
+  padding: 10px;
+}
+
+/* Table cells */
+.table-wrapper td {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  vertical-align: middle;
+}
+
+/* Book image */
+.book-thumb {
+  width: 50px;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* Action buttons */
+.action-link {
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px 8px;
+  border-radius: 5px;
+  margin: 2px;
+  display: inline-block;
+  color: #fff;
+  font-size: 14px;
+}
+
+/* Specific button colors */
+.view-link {
+  background-color: #3498db;
+}
+
+.add-link {
+  background-color: #2ecc71;
+}
+
+.edit-link {
+  background-color: #f1c40f;
+}
+
+.delete-link {
+  background-color: #e74c3c;
+}
+
+/* Hover effects for actions */
+.action-link:hover {
+  opacity: 0.85;
+}
+
+/* Optional: Hover rows */
+.table-wrapper tr:hover {
+  background-color: #f9f9f9;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+#content {
+  flex: 1;
+}

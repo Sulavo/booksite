@@ -1,0 +1,216 @@
+body {
+  margin-top: 100px;
+  background-color: white;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.book-container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  border: 2px solid red;
+  margin-top: 100px;
+  border-radius: 8px;
+}
+
+.book-top {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+.book-cover {
+  width: 250px;
+  height: 300px;
+  border-radius: 10px;
+}
+
+.book-info {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 8px;
+  overflow: hidden;
+}
+
+.book-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 0;
+  line-height: 1.2;
+  word-break: break-word;
+  max-width: 100%;
+}
+
+.book-author,
+.book-status {
+  font-size: 16px;
+  color: #666;
+}
+
+.description {
+  margin-top: 10px;
+}
+
+.description-label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.description-text {
+  font-size: 15px;
+  color: #555;
+  margin: 0;
+}
+
+.bookmark-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.bookmark-btn {
+  background: #9b42d1;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 6px;
+  font-size: 14px;
+  width: fit-content;
+  transition: background 0.3s;
+}
+
+.bookmark-btn:hover {
+  background: purple;
+}
+
+.bookmark-btn:disabled {
+  background: grey;
+  cursor: not-allowed;
+}
+
+#bookmark-status {
+  font-size: 14px;
+  min-width: 120px;
+}
+
+.genre-tags {
+  margin-top: 10px;
+}
+
+.genre {
+  background: #f0f0f0;
+  padding: 5px 10px;
+  border-radius: 15px;
+  display: inline-block;
+  margin: 2px;
+  font-size: 14px;
+}
+
+.chapter-header {
+  margin-top: 40px;
+}
+
+.chapter-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.chapter-btn {
+  background: #9b42d1;
+  padding: 15px 20px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 8px;
+  flex: 1;
+  min-width: 140px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.chapter-btn:hover {
+  background: purple;
+}
+
+.chapter-search {
+  margin-top: 20px;
+}
+
+.chapter-search input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #555;
+  border-radius: 6px;
+  background-color: #222;
+  color: #ddd;
+  font-size: 16px;
+}
+
+.chapter-search input::placeholder {
+  color: #888;
+}
+
+#chapterList {
+  margin-top: 30px;
+  max-height: 600px; /* Scroll limit */
+  overflow-y: auto;
+  padding-right: 5px;
+}
+
+.chapter-card {
+  background: #b266ff;
+  color: white;
+  padding: 20px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  transition: background 0.3s;
+}
+
+.chapter-card:hover {
+  background: purple;
+}
+
+.chapter-card a {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* Success and Remove Tick */
+.success-tick,
+.remove-tick {
+  font-size: 16px;
+  animation: fadeOut 2s forwards;
+  animation-delay: 2s;
+}
+
+.success-tick {
+  color: green;
+}
+
+.remove-tick {
+  color: red;
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}

@@ -1,0 +1,119 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6f9;
+  color: #333;
+  padding: 2rem;
+}
+
+/* Container */
+.insert-book-container {
+  background-color: #fff;
+  max-width: 700px;
+  margin: 100px auto;
+  padding: 2rem 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+}
+
+/* Heading */
+.insert-book-container h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #2c3e50;
+}
+
+/* Form Elements */
+form label {
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+form input[type="text"],
+form input[type="date"],
+form input[type="file"],
+form textarea {
+  width: 100%;
+  padding: 10px;
+  background-color: #fafafa;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: border-color 0.3s ease;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+/* Genre Checkboxes */
+.genre-checkboxes {
+  margin-top: 0.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 0.5rem;
+}
+
+.genre-checkboxes label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+/* Submit Button */
+form button {
+  margin-top: 1.5rem;
+  background-color: #2980b9;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: block;
+  width: 100%;
+}
+
+form button:hover {
+  background-color: #2471a3;
+}
+
+/* Success Message */
+.success-msg {
+  text-align: center;
+  background-color: #e0f8e9;
+  padding: 10px;
+  border-left: 5px solid #27ae60;
+  border-radius: 5px;
+  color: #2c7a4b;
+  margin-bottom: 1rem;
+}
+
+/* Error Message */
+.error-msg {
+  background-color: #fdecea;
+  color: #c0392b;
+  padding: 10px;
+  border-left: 5px solid #e74c3c;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .insert-book-container {
+    padding: 1.2rem;
+  }
+}

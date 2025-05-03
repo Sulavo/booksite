@@ -1,0 +1,133 @@
+.form-wrapper {
+  max-width: 1200px;
+  margin: 100px auto 40px;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+.form-wrapper h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.chapter-form {
+  display: flex;
+  gap: 30px;
+}
+
+.left-inputs {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.right-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #555;
+}
+
+.form-group input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.right-content label {
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #555;
+}
+
+.right-content textarea {
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  height: 350px;
+  resize: vertical;
+}
+
+.submit-btn {
+  background-color: #5c67f2;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #4a54e1;
+}
+
+.error-box {
+  background-color: #ffdddd;
+  color: #d8000c;
+  padding: 10px 20px;
+  border: 1px solid #d8000c;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+/* Stretch body and ensure footer sticks */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+#content {
+  flex: 1;
+}
+
+.site-footer {
+  background: linear-gradient(to right, #6a1b9a, #8e24aa);
+  color: white;
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-copyright {
+  font-size: 0.9rem;
+  opacity: 0.8;
+}

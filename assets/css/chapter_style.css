@@ -1,0 +1,102 @@
+/* Book Title Link */
+.book-link {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.book-link:hover {
+  color: #9b42d1; /* Purple on hover */
+}
+
+/* Chapter Page Container */
+.chapter-page {
+  max-width: 900px;
+  margin: 40px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  margin-top: 100px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Top and Bottom Navigation */
+.chapter-top-nav,
+.chapter-bottom-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.chapter-top-nav select {
+  padding: 8px 12px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+/* Buttons */
+.chapter-top-nav button,
+.chapter-bottom-nav button {
+  background-color: #9b42d1;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.chapter-top-nav button:hover,
+.chapter-bottom-nav button:hover {
+  background-color: purple;
+}
+
+.chapter-top-nav button:disabled,
+.chapter-bottom-nav button:disabled {
+  background-color: grey;
+  cursor: not-allowed;
+}
+
+/* Chapter Name Title */
+.chapter-name {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.chapter-name h1 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.chapter-name h2 {
+  font-size: 24px;
+  color: #666;
+}
+
+/* Chapter Content */
+.chapter-content {
+  font-size: 17px;
+  line-height: 1.7;
+  color: #333;
+  white-space: normal;
+}
+
+/* Proper paragraph spacing */
+.chapter-content p {
+  margin: 0 0 1.5em 0;
+}
+
+/* Remove any completely empty paragraphs */
+.chapter-content p:empty {
+  display: none;
+}
+
+/* General Body Settings */
+body {
+  background: #f9f9f9;
+  font-family: Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+}
