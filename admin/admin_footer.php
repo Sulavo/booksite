@@ -5,7 +5,7 @@
 <footer class="site-footer">
     <div class="footer-container">
         <div class="footer-copyright">
-            &copy; <?= date('Y') ?> Online Book Reading. All rights reserved.
+            &copy; <?= date('Y') ?> E-Book. All rights reserved.
         </div>
     </div>
 </footer>

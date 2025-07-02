@@ -6,7 +6,7 @@
             <a href="/booksite/contact.php">Contact Us</a>
         </div>
         <div class="footer-copyright">
-            &copy; <?= date('Y') ?> Online Book Reading. All rights reserved.
+            &copy; <?= date('Y') ?> E-Book. All rights reserved.
         </div>
     </div>
 </footer>

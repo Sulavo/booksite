@@ -105,14 +105,13 @@ function getTFIDFRecommendedBooks($conn, $user_id, $limit = 21) {
     arsort($scores);
     $recommended = [];
     foreach ($scores as $book_id => $score) {
-        if ($score > 0) {
+        if ($score >= 0.1) {
             $recommended[] = $bookMeta[$book_id];
             if (count($recommended) >= $limit) break;
         }
     }
     return $recommended;
 }
-
 
 function getPopularBooks($conn) {
     return $conn->query("
@@ -162,7 +161,6 @@ function getPopularTodayBooks($conn) {
     $stmt->execute();
     return $stmt->get_result();
 }
-
 
 $popular_books = getPopularBooks($conn);
 $updated_books = getLastUpdatedBooks($conn);

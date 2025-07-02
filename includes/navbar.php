@@ -11,7 +11,7 @@ if (session_status() === PHP_SESSION_NONE) {
 
 <head>
     <meta charset="UTF-8">
-    <title>Online Book Reading</title>
+    <title>E-Book</title>
     <link rel="stylesheet" href="assets/css/navbar.css">
     <link rel="stylesheet" href="assets/css/searchbar.css">
     <script defer src="assets/js/search_suggest_index.js"></script>
@@ -23,7 +23,7 @@ if (session_status() === PHP_SESSION_NONE) {
     <nav id="navbar" class="navbar">
         <div class="navbar-container">
             <div class="navbar-logo">
-                <a href="/booksite/index.php">Online Book Reading</a>
+                <a href="/booksite/index.php">E-Book</a>
             </div>
 
             <div class="navbar-nav-user-group">
@@ -37,7 +37,7 @@ if (session_status() === PHP_SESSION_NONE) {
                             <form id="searchForm" action="/booksite/search.php" method="GET">
                                 <div class="search-input-wrapper">
                                     <input type="text" id="searchInput" name="q" class="navbar-search-input"
-                                        placeholder="Search by name/author" autocomplete="off">
+                                        placeholder="Search by name" autocomplete="off">
                                     <button type="submit" class="search-icon"
                                         style="background: none; border: none; cursor: pointer;">
                                         🔍

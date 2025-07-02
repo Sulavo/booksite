@@ -96,7 +96,7 @@
 
     <div id="adminNavbar" class="admin-navbar">
         <div class="left-section">
-            <img src="/booksite/assets/images/logo.png" alt="Logo" class="logo">
+            <a href="/booksite/admin/book_list.php">E-Book</a>
             <a href="/booksite/admin/book_list.php">📚 Book List</a>
             <a href="/booksite/admin/users.php">👥 Users</a>
             <a href="/booksite/admin/insert_book.php">➕ Insert Book</a>

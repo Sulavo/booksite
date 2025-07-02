@@ -113,7 +113,7 @@ unset($_SESSION['error'], $_SESSION['form_data']);
                         <input type="hidden" name="redirect" value="<?= htmlspecialchars($old['redirect']) ?>">
 
                         <label for="name">Username</label>
-                        <input type="text" id="name" name="name" required placeholder="Enter your full name"
+                        <input type="text" id="name" name="name" required placeholder="Enter your Username"
                             value="<?= htmlspecialchars($old['name']) ?>">
                         <div id="name-error" class="error"></div>
 

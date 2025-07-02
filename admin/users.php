@@ -11,7 +11,7 @@ if (isset($_GET['toggle'])) {
     $currentStatus = $_GET['is_banned'];
     $newStatus = $currentStatus == 1 ? 0 : 1;
     $conn->query("UPDATE users SET is_banned = $newStatus WHERE id = $user_id");
-    $statusMsg = $newStatus ? "🚫 User banned!" : "✅ User unbanned!";
+    $statusMsg = $newStatus ? "🚫 User restricted!" : "✅ User Allowed access!";
     $statusColor = $newStatus ? 'red' : 'green';
 }
 
@@ -105,14 +105,14 @@ $users = $conn->query("SELECT * FROM users");
                     <td class="user-email" data-value="<?= strtolower($u['email']) ?>">
                         <?= htmlspecialchars($u['email']) ?>
                     </td>
-                    <td><?= $isBanned ? '❌ Banned' : '✅ Active' ?></td>
+                    <td><?= $isBanned ? '❌ Restricted' : '✅ Allowed' ?></td>
                     <td class="action-cell <?= $hoverClass ?>">
                         <?php if ($u['role'] == 0): ?>
                         <span class="admin-label">👑 Admin</span>
                         <?php else: ?>
                         <a href="?toggle=<?= $u['id'] ?>&is_banned=<?= $isBanned ?>"
                             onclick="return confirm('Are you sure?')" class="action-link">
-                            <?= $isBanned ? '✅ Unban' : '🚫 Ban' ?>
+                            <?= $isBanned ? '✅ Allow' : '🚫 Restrict' ?>
                         </a>
                         <?php endif; ?>
                     </td>
