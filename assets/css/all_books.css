@@ -1,4 +1,3 @@
-/* Toast */
 .status-toast {
   margin: 20px auto;
   width: fit-content;
@@ -20,7 +19,6 @@
   }
 }
 
-/* Centered table container */
 .table-wrapper {
   max-width: 900px;
   margin: 80px auto 40px;
@@ -31,35 +29,30 @@
   font-family: Arial, sans-serif;
 }
 
-/* Table layout */
 .table-wrapper table {
   width: 100%;
   border-collapse: collapse;
   text-align: left;
 }
 
-/* Table head */
 .table-wrapper th {
   background-color: #444;
   color: white;
   padding: 10px;
 }
 
-/* Table cells */
 .table-wrapper td {
   padding: 10px;
   border-bottom: 1px solid #ccc;
   vertical-align: middle;
 }
 
-/* Book image */
 .book-thumb {
   width: 50px;
   height: auto;
   border-radius: 5px;
 }
 
-/* Action buttons */
 .action-link {
   text-decoration: none;
   font-weight: bold;
@@ -71,7 +64,6 @@
   font-size: 14px;
 }
 
-/* Specific button colors */
 .view-link {
   background-color: #3498db;
 }
@@ -88,12 +80,11 @@
   background-color: #e74c3c;
 }
 
-/* Hover effects for actions */
+
 .action-link:hover {
   opacity: 0.85;
 }
 
-/* Optional: Hover rows */
 .table-wrapper tr:hover {
   background-color: #f9f9f9;
 }

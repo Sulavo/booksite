@@ -10,7 +10,7 @@
 }
 
 .navbar-search-input {
-  padding: 8px 40px 8px 12px; /* Right padding for search icon */
+  padding: 8px 40px 8px 12px; 
   height: 40px;
   border-radius: 6px;
   border: 1px solid #ccc;
@@ -78,9 +78,7 @@
   justify-content: center;
   font-weight: bold;
 }
-/* (keep your existing navbar CSS...) */
 
-/* Suggestions Box (NEW) */
 #suggestions {
   position: absolute;
   top: 100%;

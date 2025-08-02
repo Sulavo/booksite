@@ -1,4 +1,3 @@
-/* Reset & Base */
 * {
   margin: 0;
   padding: 0;
@@ -12,7 +11,6 @@ body {
   padding: 2rem;
 }
 
-/* Container */
 .insert-book-container {
   background-color: #fff;
   max-width: 700px;
@@ -22,14 +20,12 @@ body {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
 }
 
-/* Heading */
 .insert-book-container h2 {
   text-align: center;
   margin-bottom: 1.5rem;
   color: #2c3e50;
 }
 
-/* Form Elements */
 form label {
   display: block;
   margin-top: 1rem;
@@ -55,7 +51,6 @@ form textarea:focus {
   outline: none;
 }
 
-/* Genre Checkboxes */
 .genre-checkboxes {
   margin-top: 0.5rem;
   display: grid;
@@ -71,7 +66,6 @@ form textarea:focus {
   font-size: 14px;
 }
 
-/* Submit Button */
 form button {
   margin-top: 1.5rem;
   background-color: #2980b9;
@@ -90,7 +84,6 @@ form button:hover {
   background-color: #2471a3;
 }
 
-/* Success Message */
 .success-msg {
   text-align: center;
   background-color: #e0f8e9;
@@ -101,7 +94,6 @@ form button:hover {
   margin-bottom: 1rem;
 }
 
-/* Error Message */
 .error-msg {
   background-color: #fdecea;
   color: #c0392b;
@@ -111,7 +103,6 @@ form button:hover {
   margin-bottom: 1rem;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .insert-book-container {
     padding: 1.2rem;

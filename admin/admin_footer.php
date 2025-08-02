@@ -1,7 +1,3 @@
-<?php
-// No logic here, but file should be treated as PHP
-?>
-
 <footer class="site-footer">
     <div class="footer-container">
         <div class="footer-copyright">
@@ -11,7 +7,6 @@
 </footer>
 
 <style>
-/* Ensure full height */
 html,
 body {
     height: 100%;
@@ -19,21 +14,17 @@ body {
     padding: 0;
 }
 
-/* Flex column layout */
 body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
-/* Content should take up remaining height */
 #content {
     flex: 1;
     padding-bottom: 60px;
-    /* Optional bottom spacing */
 }
 
-/* Footer styling */
 .site-footer {
     background: linear-gradient(to right, #6a1b9a, #8e24aa);
     color: white;
@@ -43,10 +34,9 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
     margin-top: auto;
-    /* Ensures footer moves to bottom */
+
 }
 
-/* Container */
 .footer-container {
     max-width: 1200px;
     margin: auto;
@@ -57,12 +47,11 @@ body {
     flex-wrap: wrap;
 }
 
-/* Optional (not used) */
+
 .footer-links {
     display: none;
 }
 
-/* Copyright */
 .footer-copyright {
     font-size: 0.9rem;
     opacity: 0.8;

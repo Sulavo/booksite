@@ -2,13 +2,13 @@
 require_once 'includes/db.php';
 require_once 'includes/auth.php';
 
-// --- Pagination Setup ---
+
 $limit = 30;
 $page = isset($_GET['page']) && is_numeric($_GET['page']) ? (int)$_GET['page'] : 1;
 if ($page < 1) $page = 1;
 $offset = ($page - 1) * $limit;
 
-// --- If user not logged in ---
+
 if (!isLoggedIn()) {
 ?>
 <!DOCTYPE html>
@@ -42,10 +42,10 @@ if (!isLoggedIn()) {
     exit();
 }
 
-// --- Get the logged-in user's ID ---
+
 $userId = getUserId();
 
-// --- Fetch total number of bookmarks ---
+
 $stmt = $conn->prepare("
     SELECT COUNT(*) AS total
     FROM bookmarks
@@ -57,7 +57,7 @@ $result = $stmt->get_result();
 $total_bookmarks = $result->fetch_assoc()['total'] ?? 0;
 $total_pages = max(ceil($total_bookmarks / $limit), 1);
 
-// --- Fetch bookmarked books with images and views ---
+
 $stmt = $conn->prepare("
     SELECT b.*, a.name AS author_name,
            COALESCE(COUNT(cv.id), 0) AS total_views,

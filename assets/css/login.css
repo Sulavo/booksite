@@ -1,18 +1,15 @@
-/* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Body */
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-color: #f6f6f6;
-  padding-top: 70px; /* Leave space for navbar */
+  padding-top: 70px; 
 }
 
-/* Navbar space (assuming it's already styled elsewhere) */
 .page-wrapper {
   display: flex;
   justify-content: center;
@@ -20,7 +17,6 @@ body {
   min-height: calc(100vh - 70px);
 }
 
-/* Container */
 .login-container {
   width: 400px;
   background-color: #fff;
@@ -29,7 +25,6 @@ body {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
-/* Heading */
 .login-container h2 {
   text-align: center;
   margin-bottom: 25px;
@@ -37,7 +32,6 @@ body {
   color: #333;
 }
 
-/* Form styling */
 .login-form {
   display: flex;
   flex-direction: column;
@@ -63,7 +57,6 @@ body {
   border-color: #6a0dad;
 }
 
-/* Button styling */
 .login-btn {
   background-color: #6a0dad;
   color: white;
@@ -81,7 +74,6 @@ body {
   background-color: #530b87;
 }
 
-/* Error message */
 .error {
   color: red;
   font-size: 14px;
@@ -89,7 +81,6 @@ body {
   margin-bottom: 10px;
 }
 
-/* Signup link */
 .signup-link {
   text-align: center;
   margin-top: 20px;

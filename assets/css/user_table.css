@@ -12,7 +12,6 @@
   text-align: center;
 }
 
-/* Fade-out animation */
 @keyframes fadeOut {
   to {
     opacity: 0;
@@ -20,7 +19,6 @@
   }
 }
 
-/* Table container to center content */
 .table-wrapper {
   max-width: 900px;
   margin: 100px auto 40px;
@@ -31,27 +29,23 @@
   font-family: Arial, sans-serif;
 }
 
-/* Table styling */
 .table-wrapper table {
   width: 100%;
   border-collapse: collapse;
   text-align: left;
 }
 
-/* Table headers */
 .table-wrapper th {
   background-color: #444;
   color: white;
   padding: 10px;
 }
 
-/* Table rows */
 .table-wrapper td {
   padding: 10px;
   border-bottom: 1px solid #ccc;
 }
 
-/* Hover effects */
 .action-cell {
   transition: background-color 0.3s;
 }

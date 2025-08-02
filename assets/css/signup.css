@@ -3,16 +3,16 @@ body {
 }
 .signup-container {
   width: 400px;
-  margin: 120px auto 40px; /* ← top margin increased */
+  margin: 120px auto 40px; 
   padding: 30px 25px;
   background-color: white;
   border-radius: 15px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
   font-family: Arial, sans-serif;
-  color: black; /* Ensure text is readable on white bg */
+  color: black;
 }
 
-/* Input fields */
+
 .signup-container input[type="text"],
 .signup-container input[type="email"],
 .signup-container input[type="password"] {
@@ -25,7 +25,7 @@ body {
   font-size: 16px;
 }
 
-/* Labels */
+
 .signup-container label {
   font-size: 14px;
   color: #333;
@@ -33,7 +33,6 @@ body {
   margin-bottom: 4px;
 }
 
-/* Sign Up button */
 .signup-container button {
   width: 100%;
   padding: 14px;
@@ -51,7 +50,7 @@ body {
   background-color: #560bad;
 }
 
-/* Login link */
+
 .signup-container .login-link {
   text-align: center;
   margin-top: 20px;

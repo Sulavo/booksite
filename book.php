@@ -10,7 +10,6 @@ if (!isset($_GET['id']) || !is_numeric($_GET['id'])) {
 
 $book_id = (int)$_GET['id'];
 
-// Fetch Book Details
 $book_stmt = $conn->prepare("
     SELECT b.*, a.name AS author_name 
     FROM books b 
@@ -27,7 +26,6 @@ if (!$book) {
     die("Book not found.");
 }
 
-// Fetch Genres
 $genres = [];
 $genres_stmt = $conn->prepare("
     SELECT g.name 
@@ -43,7 +41,6 @@ while ($row = $genres_result->fetch_assoc()) {
 }
 $genres_stmt->close();
 
-// Fetch Chapters
 $chapters = [];
 $chapters_stmt = $conn->prepare("
     SELECT id, chapter_no, chapter_name, updated_at 
@@ -59,7 +56,6 @@ while ($row = $chapters_result->fetch_assoc()) {
 }
 $chapters_stmt->close();
 
-// Check Bookmark Status
 $isBookmarked = false;
 if (isLoggedIn()) {
     $userId = getUserId();
@@ -75,11 +71,10 @@ if (isLoggedIn()) {
     $bookmark_check->close();
 }
 
-// Get First and Latest Chapters
+
 $first_chapter = $chapters ? end($chapters) : null;
 $latest_chapter = $chapters ? reset($chapters) : null;
 
-// Limit Description Words
 function limit_words($text, $limit = 100) {
     $words = preg_split('/\s+/', strip_tags($text));
     return htmlspecialchars(count($words) <= $limit 

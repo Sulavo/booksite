@@ -70,8 +70,8 @@ hr {
   transition: transform 0.3s;
   display: flex;
   flex-direction: column;
-  height: auto; /* ✅ No fixed height */
-  min-height: 320px; /* ✅ Optional: visual consistency */
+  height: auto; 
+  min-height: 320px; 
 }
 
 .book-card:hover {

@@ -53,8 +53,6 @@ if ($current) {
     $stmt->close();
     $newStatus = true;
 }
-
-// Success
 echo json_encode(['success' => true, 'bookmarked' => $newStatus]);
 //ob_end_clean();
 //exit;

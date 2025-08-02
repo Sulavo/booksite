@@ -1,4 +1,4 @@
-/* Book Title Link */
+
 .book-link {
   color: #333;
   text-decoration: none;
@@ -6,10 +6,10 @@
 }
 
 .book-link:hover {
-  color: #9b42d1; /* Purple on hover */
+  color: #9b42d1; 
 }
 
-/* Chapter Page Container */
+
 .chapter-page {
   max-width: 900px;
   margin: 40px auto;
@@ -20,7 +20,6 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Top and Bottom Navigation */
 .chapter-top-nav,
 .chapter-bottom-nav {
   display: flex;
@@ -36,7 +35,6 @@
   font-size: 16px;
 }
 
-/* Buttons */
 .chapter-top-nav button,
 .chapter-bottom-nav button {
   background-color: #9b42d1;
@@ -59,7 +57,6 @@
   cursor: not-allowed;
 }
 
-/* Chapter Name Title */
 .chapter-name {
   text-align: center;
   margin-bottom: 30px;
@@ -75,7 +72,6 @@
   color: #666;
 }
 
-/* Chapter Content */
 .chapter-content {
   font-size: 17px;
   line-height: 1.7;
@@ -83,17 +79,14 @@
   white-space: normal;
 }
 
-/* Proper paragraph spacing */
 .chapter-content p {
   margin: 0 0 1.5em 0;
 }
 
-/* Remove any completely empty paragraphs */
 .chapter-content p:empty {
   display: none;
 }
 
-/* General Body Settings */
 body {
   background: #f9f9f9;
   font-family: Arial, sans-serif;
